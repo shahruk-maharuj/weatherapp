@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  </head>
+  <body class="bg-blue-500 text-white">
+    <div class="container mx-auto p-10">
+        <header class="flex justify-center items-center">
+            <input type="text" id="city-input" placeholder="Enter a city" class="p-2 rounded shadow">
+            <button id="submit-btn" class="ml-2 p-2 rounded bg-blue-700 text-white shadow">Get Weather</button>
+        </header>
+        <main>
+            <div id="weather-container" class="mt-10 animate__animated animate__fadeIn">
+                <!-- Weather data will go here -->
+            </div>
+            <div id="forecast-container" class="mt-10 animate__animated animate__fadeIn">
+                <!-- Forecast data will go here -->
+            </div>
+        </main>
+        <div id="error-message" class="mt-10 text-red-600"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
